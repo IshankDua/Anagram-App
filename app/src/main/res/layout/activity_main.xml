@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wordTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Word To Find"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+        android:layout_alignParentRight="true">
+
+    <ImageButton
+        android:id="@+id/hint"
+        android:layout_width="130dp"
+        android:layout_height="102dp"
+
+        android:src="@drawable/ic_lightbulb_outline_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="   HINT"
+        android:textStyle="bold"
+       android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+</RelativeLayout>
+
+
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/wordEnteredEt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/wordTv"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/validate"
+        android:layout_marginTop="60dp"
+        android:text="Validate"
+        android:layout_below="@+id/wordEnteredEt"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/newGame"
+        android:text="New Game"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/validate"/>
+
+    <TextView
+        android:id="@+id/justchecking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newGame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:visibility="invisible" />
+
+
+
+
+</RelativeLayout>
